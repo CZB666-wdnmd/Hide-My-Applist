@@ -17,8 +17,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme"
+        android:enableOnBackInvokedCallback="true">
+        
         <activity
             android:name="icu.nullptr.hidemyapplist.ui.activity.AboutActivity"
             android:theme="@style/AppTheme.About" />

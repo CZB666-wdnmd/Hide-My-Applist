@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
-import com.google.android.gms.ads.MobileAds
 import com.google.android.material.color.DynamicColors
 import com.tsng.hidemyapplist.R
 import com.tsng.hidemyapplist.databinding.ActivityMainBinding
@@ -25,7 +24,6 @@ class MainActivity : MaterialActivity() {
         val navController = navHostFragment.navController
         setupWithNavController(binding.bottomNav, navController)
 
-        MobileAds.initialize(this)
     }
 
     override fun onSupportNavigateUp(): Boolean {

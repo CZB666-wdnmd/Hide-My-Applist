@@ -10,6 +10,7 @@ plugins {
     kotlin("plugin.serialization")
     id("com.android.application")
     id("com.google.devtools.ksp")
+    id("dev.rikka.tools.autoresconfig")
     id("dev.rikka.tools.materialthemebuilder")
     id("dev.rikka.tools.refine")
     id("androidx.navigation.safeargs.kotlin")
@@ -25,6 +26,13 @@ android {
     buildFeatures {
         viewBinding = true
     }
+}
+
+autoResConfig {
+    generateClass.set(true)
+    generateRes.set(false)
+    generatedClassFullName.set("icu.nullptr.hidemyapplist.util.LangList")
+    generatedArrayFirstItem.set("SYSTEM")
 }
 
 materialThemeBuilder {
@@ -121,7 +129,7 @@ dependencies {
     implementation(projects.common)
     runtimeOnly(projects.xposed)
 
-    val rxhttpVersion = "2.9.3-beta2"
+    val rxhttpVersion = "2.9.3"
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.1")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.1")
     implementation("androidx.preference:preference-ktx:1.2.0")

@@ -16,9 +16,6 @@ plugins {
     id("androidx.navigation.safeargs.kotlin")
 }
 
-if (officialBuild) {
-    plugins.apply("com.google.gms.google-services")
-}
 
 android {
     namespace = "com.tsng.hidemyapplist"

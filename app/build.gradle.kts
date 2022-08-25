@@ -142,8 +142,6 @@ dependencies {
     implementation("com.github.liujingxing.rxhttp:converter-serialization:$rxhttpVersion")
     implementation("com.github.topjohnwu.libsu:core:5.0.2")
     implementation("com.google.android.material:material:1.6.1")
-    implementation("com.google.android.gms:play-services-ads:21.1.0")
-    implementation("com.google.firebase:firebase-analytics-ktx:21.1.0")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation("dev.rikka.hidden:compat:3.2.0")
     implementation("dev.rikka.rikkax.material:material:2.5.1")
